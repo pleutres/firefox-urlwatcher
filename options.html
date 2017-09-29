@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+  <body style="font: 14px sans-serif;">
+
+    <form>
+        <div>
+          Choose either to save URL into a file (not supported in Firefox for now) or notify a remote HOST.<BR>
+
+          On a remote host the URL called is : <i>&lt;remoteHost&gt;?p=prefixValue&u=urlValue</i>
+          <br>
+          On a local file, the URL is saved as-is prefixed by a timestamp.
+          <br>
+          <br>
+        </div>
+
+        <table>
+          <tr>
+            <td>
+           Prefix
+            </td>
+            <td><input type="text" id="prefix" size=40></td>
+          </tr>
+          <tr>
+            <td>
+           Remote host URL
+            </td>
+            <td><input type="text" id="remoteHostURL" size=40></td>
+          </tr>
+          <tr>
+            <td>
+              <label>Local file</label>
+            </td>
+            <td><input type="text" id="localFile" size=40 disabled placeholder="Not supported by Firefox"></td>
+          </tr>
+        </table>
+        
+        <div>
+        <button type="submit">Save</button>
+        </div>
+    </form>
+
+    <script src="options.js"></script>
+
+  </body>
+
+</html>
+

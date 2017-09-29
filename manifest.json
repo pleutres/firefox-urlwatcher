@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "URL watcher",
+  "version": "1.1.0",
+
+  "description": "Log tab URL to a remote server",
+  "homepage_url": "https://github.com/pleutre",
+  "icons": {
+    "128": "img/icon_128.png",
+    "16": "img/icon_16.png"
+  },
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "options_ui": {
+    "page": "options.html"
+  }
+}
